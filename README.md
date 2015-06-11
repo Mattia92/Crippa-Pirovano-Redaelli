@@ -1,2 +1,0 @@
-# Crippa-Pirovano-Redaelli
-Project for HYPERMEDIA APPLICATIONS (WEB AND MULTIMEDIA) [2014-15]
