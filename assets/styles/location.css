@@ -1,0 +1,435 @@
+* {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+a {
+    color: #373c40;
+}
+ul {
+  list-style-type: none; }
+
+body {
+  width: 100%;
+  position: relative;
+  margin: 0px;
+  height: 1470px;
+  background-color: #F7FAF9;
+  overflow-x: hidden; }
+
+button {
+  padding: 12px 14px;
+  border: 2px solid #373c40;
+  border-radius: 5px;
+  color: #373c40;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: white;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease; }
+
+button:hover {
+  color: white;
+  background-color: #22a966;
+  border-color: #22a966;
+  cursor: pointer; }
+
+.sfondo {
+  background-color: #f4f4f4;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 1400px;
+  top: 0px;}
+
+/*<--BARRA DI NAVIGAZIONE FISSA-->*/
+nav {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0px 10px 0px;
+  background-color: white;
+  z-index: 1; }
+
+nav #selectBar {
+  position: relative;
+  display: block;
+  height: 50px;
+  max-width:1075px;
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  z-index: 0; }
+
+#selectBar #title {
+  position: relative;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 18px;
+  box-sizing: border-box;
+  margin: 0 0 0 11%;
+  display: inline-block;
+  z-index: 2;
+  font-family: Indie Flower;
+}
+
+#selectBar #unique {
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  z-index: 2; }
+
+#unique:hover {
+  cursor: pointer; }
+
+body.menuTendina #selectBar #menu {
+  background-color: #22a966;
+  color: white; }
+
+#selectBar #menu {
+  height: 48px;
+  width: 48px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 19;
+  color: #444;
+  position: absolute;
+  right: 0px;
+  display: none;
+  z-index: 2; }
+
+#selectBar #menu:hover {
+  cursor: pointer; }
+
+#navBar {
+  position: relative;
+  display: block;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  float: right;
+  background-color: white;
+  z-index: 2; }
+
+body.menuTendina #navBar {
+  background-color: rgba(55, 60, 64, 0.95);
+  top: 70px;
+  -webkit-transition: all 550ms ease-in-out;
+  -moz-transition: all 550ms ease-in-out;
+  -o-transition: all 550ms ease-in-out;
+  transition: all 500ms ease-in-out; }
+
+#navBar li {
+  height: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 0 0 0 0;
+  display: inline-block;
+  width: auto;
+  top: -30px;
+  opacity: 0;
+  transition: all 800ms ease;
+  position: relative;
+  transition-delay: 0; }
+
+#navBar li:hover,
+body.menuTendina #navBar li:hover {
+  background-color: #373c40;
+  color: white;
+  cursor: pointer; }
+
+.button {
+  color: #373c40;
+  background-color: white;
+  -webkit-transition: background-color 350ms;
+  -moz-transition: background-color 350ms;
+  -o-transition: background-color 350ms;
+  transition: background-color 350ms; }
+
+#navBar li.button.scendi {
+  top: 0px;
+  opacity: 1; }
+
+/*<--SECTION STANDARD-->*/
+section {
+  position: relative;
+  display: block;
+  background-color: white;
+  width: 940px;
+  margin: 0 auto 0 auto;
+  top: 70px;
+  padding-top: 70px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 0; }
+
+section h1 {
+  height: 15%;
+  display: block;
+  width: 100%;
+  padding: 0px 0px 5px 0px;
+  color: #373c40;
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0px; }
+
+section .line {
+  display: block;
+  width: 35px;
+  height: 0px;
+  border: 1px solid #737c84;
+  margin: 0 auto 0 auto; }
+
+/*<--THE TEAM SECTION-->*/
+#theteam {
+  height: 657px;
+  background-color: #f4f4f4; }
+
+#theteam .line {
+  margin-top: 19px;
+  border: 1px solid #22a966;
+  width: 30px; }
+
+/*<--FORM SECTION-->*/
+#form {
+  margin-bottom: 0px;
+  height: 673px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+  background-color: #f4f4f4; }
+
+#form #sender {
+  padding: 50px 10px 0px 10px;
+  box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  width: 66%;
+  height: 474px; }
+
+#form #address {
+  float: right;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 70px 10px 0px 10px;
+  width: 34%;
+  height: 374px; }
+
+#sender label {
+  text-align: left;
+  display: block;
+  height: 20px;
+  width: 100%;
+  color: #adadad;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px; }
+
+#sender input {
+  width: 100%;
+  border: 1px solid #cccccc;
+  font-size: 14px;
+  line-height: 1.428571429;
+  height: 38px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  opacity: 0.3;
+  color: #444;
+  font-weight: 400; }
+
+#sender textarea {
+  width: 100%;
+  margin: 0px 0px 15px 0px;
+  padding: 10px 12px 40px 12px;
+  color: #444;
+  font-weight: 400;
+  opacity: 0.3; }
+
+#sender button {
+  width: 100%;
+  background-color: #22a966;
+  color: white;
+  border-color: #22a966; }
+
+#sender button:hover {
+  background-color: #373c40;
+  border-color: #373c40; }
+
+#address h1 {
+  margin: 0px 0px 15px 0px;
+  color: #999;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: left; }
+
+#address p {
+  margin: 0px 0px 21px;
+  padding-right: 0px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  color: #999;
+  text-align: left;
+  line-height: 24px; }
+
+#address p span {
+  color: #777;
+  font-weight: 600;
+  margin-right: 5px; }
+
+/*<--FOOTER-->*/
+footer {
+  position: absolute;
+  background-color: #3e4347;
+  color: #373c40;
+  bottom: 0px;
+  width: 100%;
+  height: 70px; }
+
+footer #container {
+  position: relative;
+  display: block;
+  margin: 15px auto 0px auto;
+  width: 80%;
+  height: 55px; }
+
+footer #container p {
+  position: absolute;
+  padding-left: 14px;
+  color: #8c949c;
+  font-size: 12px;
+  left: 38px;
+  display: inline-block; }
+
+footer #container img {
+  position: absolute;
+  left: 0px;
+  display: inline-block;
+  height: 38px;
+  width: 38px; }
+
+/*<---PRIMA QUERY : STEP 2 991PX--->*/
+@media screen and (max-width: 991px) {
+  body {
+    height: 1470px; }
+
+  /*cover per sfondo bianco */
+  .sfondo#au {
+  	height: 1400px;
+    top: 0px; }
+
+  section,
+  footer #container,
+  .line ul {
+    width: 728px; }
+
+  /*<---NAVBAR--->*/
+  #navBar {
+    position: fixed;
+    display: block;
+    height: 400px;
+    width: 100%;
+    left: 0px;
+    list-style-type: none;
+    background-color: rgba(76, 79, 82, 0.95);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    top: -440px;
+    z-index: 0; }
+
+  #navBar li {
+    display: block;
+    width: 728px;
+    position: relative;
+    margin: 0 auto 0 auto;
+    background-color: rgba(255, 255, 255, 0);
+    color: white; }
+
+  #selectBar {
+    width: 728px; }
+
+  #selectBar #menu {
+    display: block; }
+
+  /*<---THETEAM--->*/
+  #theteam {
+    height: 727px; }
+
+  #theteam ul {
+    height: 570px;
+    clear: both; }
+}
+/*<---SECONDA QUERY : STEP 3 767PX--->*/
+@media screen and (max-width: 767px) {
+  body {
+    height: auto; }
+
+  section {
+    margin: 0 auto 0 auto;
+    width: 100%; }
+
+  /*<---NAVBAR--->*/
+  nav {
+    position: absolute; }
+
+  #selectBar {
+    width: 100%; }
+
+  #selectBar #menu {
+    position: relative;
+    float: right;
+    right: 20px;
+    margin-left: 30px; }
+
+  #selectBar #unique {
+    position: relative;
+    float: left;
+    left: 20px; }
+
+  /*<---THETEAM--->*/
+  #theteam {
+    height: auto;
+    margin-bottom: 70px; }
+
+  /*<---FORM--->*/
+  #form {
+    height: auto; }
+
+  #form #address,
+  #form #sender {
+    width: 100%;
+    height: auto; 
+    float: none;
+}
+
+  /*<---FOOTER-->*/
+  footer {
+    position: relative;
+    bottom: -71px; }
+
+  footer #container {
+    width: 97%; } }
+@media screen and (max-width: 480px) {
+  footer #container img {
+    display: none; }
+
+  footer #container p {
+    position: relative; } }
+
+ #mappina {
+        width:100%;
+        height: 400px;
+      }

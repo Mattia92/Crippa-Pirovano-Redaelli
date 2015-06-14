@@ -1,0 +1,445 @@
+* {
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+a {
+    color: #22a966;
+    text-decoration:none;
+}
+
+ul {
+  list-style-type: none; }
+
+body {
+  width: 100%;
+  position: relative;
+  margin: 0px;
+  height: auto;
+  background-color: #F7FAF9;
+  overflow-x: hidden; }
+
+button {
+  padding: 12px 14px;
+  border: 2px solid #373c40;
+  border-radius: 5px;
+  color: #373c40;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: white;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+ }
+
+button:hover {
+  color: white;
+  background-color: #22a966;
+  border-color: #22a966;
+  cursor: pointer; 
+
+}
+
+/*<--BARRA DI NAVIGAZIONE FISSA-->*/
+nav {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0px 10px 0px;
+  background-color: white;
+  z-index: 1; }
+
+nav #selectBar {
+  position: relative;
+  display: block;
+  height: 50px;
+  max-width:1075px;
+  padding: 0px;
+  margin: 0 auto 0 auto;
+  z-index: 0; }
+
+
+#selectBar #unique {
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  z-index: 2; }
+
+#unique:hover {
+  cursor: pointer; }
+
+body.menuTendina #selectBar #menu {
+  background-color: #22a966;
+  color: white; }
+
+#selectBar #menu {
+  height: 48px;
+  width: 48px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 19;
+  color: #444;
+  position: absolute;
+  right: 0px;
+  display: none;
+  z-index: 2; }
+
+#selectBar #menu:hover {
+  cursor: pointer; }
+
+#navBar {
+  position: relative;
+  display: block;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  float: right;
+  background-color: white;
+  z-index: 2; }
+
+body.menuTendina #navBar {
+  background-color: rgba(55, 60, 64, 0.95);
+  top: 70px;
+  -webkit-transition: all 550ms ease-in-out;
+  -moz-transition: all 550ms ease-in-out;
+  -o-transition: all 550ms ease-in-out;
+  transition: all 500ms ease-in-out; }
+
+#navBar li {
+  height: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 0 0 0 0;
+  display: inline-block;
+  width: auto;
+  top: -30px;
+  opacity: 0;
+  transition: all 800ms ease;
+  position: relative;
+  transition-delay: 0; }
+
+#navBar li:hover,
+body.menuTendina #navBar li:hover {
+  background-color: #373c40;
+  color: white;
+  cursor: pointer; }
+
+.button {
+  color: #373c40;
+  background-color: white;
+  -webkit-transition: background-color 350ms;
+  -moz-transition: background-color 350ms;
+  -o-transition: background-color 350ms;
+  transition: background-color 350ms; }
+
+#navBar li.button.scendi {
+  top: 0px;
+  opacity: 1; }
+
+/*<--SECTION STANDARD-->*/
+section {
+  position: relative;
+  display: block;
+  background-color: white;
+  width: 100%
+  top: 70px;
+  padding-top: 70px;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 0; }
+
+section h1, section h2{
+  display: block;
+  width: 100%;
+  padding: 0px 0px 5px 0px;
+  color: #22a966;
+  font-size: 25px;
+  line-height: 100px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 0px; }
+
+section .line {
+  display: block;
+  width: 35px;
+  height: 0px;
+  border: 1px solid #737c84;
+  margin: 0 auto 0 auto; }
+
+.description{
+  margin: 14px 0 5px;
+  padding: 0 10px;
+  color: #818181;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*<--THE TEAM SECTION-->*/
+#theteam {
+  height: 920px;
+  background-color: #f4f4f4;
+  /* display: none; */
+  background-image: url("../images/stars.png");
+}
+
+#theteam .line.green {
+  margin-top: 19px;
+  border: 1px solid #22a966;
+  width: 30px; }
+
+#theteam ul,
+#whatwedo ul {
+  display: block;
+  margin: 50px 0px 20px 0px;
+  width: 100%;
+  height: 508px;
+  padding: 0px; }
+
+
+#theteam ul li {
+  display: inline-block;
+  width: 25%;
+  height: 508px;
+  padding: 0px 10px 0px 10px;
+  box-sizing: border-box; }
+
+#theteam ul li img {
+  height: 290px;
+  width: 200px;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  opacity: 0.7; }
+
+#theteam ul li img:hover {
+  cursor: pointer;
+  opacity: 1; }
+
+/*<--WHAT WE DO SECTION-->*/
+.sfondo#wwe {
+  height: 938px;
+  top: 2317; }
+
+#whatwedo {
+  height: 960px;
+  display:none; 
+  }
+
+#whatwedo ul {
+  height: 530px;
+  margin-top: 35px;}
+
+.divider {
+  width: 100%;
+  height: 0px;
+  border-top: 1px dotted lightgrey; }
+
+#whatwedo ul li {
+  display: inline-block;
+  width: 33%;
+  height: 50%;
+  padding: 0px 10px 0px 10px;
+  box-sizing: border-box;
+  border-right: 1px dotted lightgrey;
+  margin: 35px 0 35px 0; }
+
+#whatwedo ul li .icon {
+  margin: 0 auto 0 auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: #f6f6f6;
+  color: #444;
+  position: relative;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  padding: 27px 28.5px 27px 28.5px;
+  box-sizing: border-box; }
+
+#whatwedo ul li:hover .icon {
+  background-color: #22a966;
+  cursor: pointer;
+}
+
+/*<--FOOTER-->*/
+footer {
+  position: absolute;
+  background-color: #3e4347;
+  color: #373c40;
+  bottom: -21px;
+  width: 100%;
+  height: 70px; }
+
+footer #container {
+  position: relative;
+  display: block;
+  margin: 15px auto 0px auto;
+  width: 80%;
+  height: 55px; }
+
+footer #container p {
+  position: absolute;
+  padding-left: 14px;
+  color: #8c949c;
+  font-size: 12px;
+  left: 38px;
+  display: inline-block; }
+
+footer #container img {
+  position: absolute;
+  left: 0px;
+  display: inline-block;
+  height: 38px;
+  width: 38px; }
+
+/*<---PRIMA QUERY : STEP 2 991PX--->*/
+@media screen and (max-width: 991px) {
+
+  /*<---NAVBAR--->*/
+#navBar {
+    position: fixed;
+    display: block;
+    height: 400px;
+    width: 100%;
+    left: 0px;
+    list-style-type: none;
+    background-color: rgba(76, 79, 82, 0.95);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    top: -440px;
+    z-index: 0; }
+
+  #navBar li {
+    display: block;
+    width: 728px;
+    position: relative;
+    margin: 0 auto 0 auto;
+    background-color: rgba(255, 255, 255, 0);
+    color: white; }
+
+  #selectBar {
+    width: 728px; }
+
+  #selectBar #menu {
+    display: block; }
+
+  /*<---THETEAM--->*/
+  #theteam {
+    height: 1000px; }
+
+  #theteam ul {
+    height: 570px;
+    clear: both;}
+
+  #theteam ul li {
+    height: 100%;}
+
+  #theteam ul li img {
+    width: 167px; }
+
+   footer {
+     bottom: -2px;
+   }
+    
+/*<---SECONDA QUERY : STEP 3 767PX--->*/
+@media screen and (max-width: 767px) {
+  body {
+    height: 910px;
+  }
+
+  section {
+    margin: 0 auto 0 auto;
+    width: 100%; }
+
+  /*<---NAVBAR--->*/
+  nav {
+    position: absolute; }
+
+  #selectBar {
+    width: 100%; }
+
+  #selectBar #menu {
+    position: relative;
+    float: right;
+    right: 20px;
+    margin-left: 30px; }
+
+  #selectBar #unique {
+    position: relative;
+    float: left;
+    left: 20px; }
+
+  /*<---THETEAM--->*/
+  #theteam {
+    margin-bottom: 0px;
+	}
+
+  #theteam ul {
+    height: auto;
+    clear: none; 
+    margin-bottom: 0px;}
+
+  #theteam ul li {
+    width: 100%;
+    height: 508px;
+    float: none;
+    margin-bottom: 0px;}
+
+  #theteam ul li img {
+    width: 200px; }
+
+  /*<--WHATWEDO--->*/
+  #whatwedo {
+    height: auto;
+    padding-bottom: 70px; }
+
+  #whatwedo ul {
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 50px; }
+
+  #whatwedo ul li {
+    width: 100%;
+    margin: 0;
+    border: 0px;
+    height: auto;
+    margin-bottom: 20px; }
+
+   /*<---FOOTER-->*/
+  footer {
+    position: relative;
+    bottom: 8px; }
+
+  footer #container {
+    width: 97%;
+    margin: 0 auto 0 auto;} }
+@media screen and (max-width: 480px) {
+  header {
+    height: 600px; }
+
+footer #container p {
+	left: 0;
+      margin: 0 auto 0 auto;
+}
+
+  footer #container img {
+    display: none; }
+
+  footer #container p {
+    position: relative;
+    float: right; } }
