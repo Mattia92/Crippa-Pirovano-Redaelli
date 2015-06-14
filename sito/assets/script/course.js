@@ -56,7 +56,7 @@ function asder(){
            {
             var tit= teach[i].Instructor;
             $('section .time').each(function(){
-    $(this).wrapInner('<a href="http://frankgym.altervista.org/pages/instructor.html?idInstructor='+teach[i].idInstructor+'">'+tit+'<br>'+'</a>');
+    $(this).wrapInner('<a href="http://frankgym.altervista.org/pages/instructo.html?idInstructor='+teach[i].idInstructor+'">'+tit+'<br>'+'</a>');
 });
 
 			}

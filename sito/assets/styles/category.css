@@ -27,7 +27,7 @@ body {
   width: 100%;
   position: relative;
   margin: 0px;
-  height: 1701px;
+  height: 1250px;;
   background-color: #F7FAF9;
   overflow-x: hidden; 
   background-image: url("../images/stars.png");
@@ -1189,18 +1189,22 @@ footer #container img {
 /*<---PRIMA QUERY : STEP 2 991PX--->*/
 @media screen and (max-width: 991px) {
   body {
+  height: 200px;
+ }
 
-    height: 1763px }
+.course {
+  height: auto;
+}
 
 footer{
-bottom: -1132px;
+bottom: -2144px;
   
 }
 #touch .imgCourse{
 width: 95%;
-height: 68%;
+height: 130%;
 margin-right: 2.5%;
-margin-top: 150%;
+margin-top: 15%;
 float:none;
 
 }
@@ -1208,7 +1212,7 @@ float:none;
 width: 95%;
 height: 10%;
 margin-right: 2.5%;
-margin-left: 27.5%;
+margin-left: 38.5%;
 /* margin-top: 0%; */
 /* text-align: center; */
 float:none;
@@ -1217,9 +1221,14 @@ float:none;
 #touch .descr{
 width: 90%;
 height: 60%;
+margin-bottom: 10%;
 margin-right: 2.5%;
 float:none;
 
+}
+
+div.instr {
+  margin-top: 20%;
 }
 
 	#theteam {
@@ -1342,6 +1351,23 @@ float:none;
 @media screen and (max-width: 767px) {
   body {
     height: auto; }
+
+#touch .imgCourse{
+width: 94%;
+height: 40%;
+margin-right: 2.5%;
+margin-top: 15%;
+float:none;
+
+}
+    #touch .descr{
+width: 90%;
+height: 60%;
+margin-bottom: 100%;
+margin-right: 2.5%;
+float:none;
+
+}
 
   section {
     margin: 0 auto 0 auto;
@@ -1676,7 +1702,9 @@ section .time{
 .instr{
 
   position:relative;
-  height:100%;
+  
+
+  height: 75%;
   display: block;
   width: 100%;
   padding: 0px 0px 5px 0px;
@@ -1690,7 +1718,7 @@ section .time{
   letter-spacing: 2px;
   
 
-  margin-top: 25%;
+  /*margin-top: 25%;*/
 
   margin-bottom: 0%;
 

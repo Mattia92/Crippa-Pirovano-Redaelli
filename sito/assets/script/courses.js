@@ -23,6 +23,8 @@ $("#touch ul li div.pint").click(function() {
 
 $("#touch ul li div.pint").click(function(){
 	$('body').addClass("addedClass");
+    $('body').removeClass("level");
+    $('body').addClass("alfa");
 	$('html, body').stop(true, false).animate({
 		scrollTop: $("#theteam").offset().top
 	}, 1500);
@@ -30,6 +32,8 @@ $("#touch ul li div.pint").click(function(){
 
 $("#touch ul li div.goo").click(function(){
 	$('body').addClass("addedClass");
+    $('body').removeClass("alfa");
+    $('body').addClass("level");
 	$('html, body').stop(true, false).animate({
 		scrollTop: $("#theteam").offset().top
 	}, 1500);

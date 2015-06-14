@@ -101,7 +101,7 @@ nav {
   box-sizing: border-box;
   padding: 10px 0px 10px 0px;
   background-color: white;
-  z-index: 1; }
+  z-index: 2; }
 
 nav #selectBar {
   position: relative;
@@ -1538,7 +1538,11 @@ footer #container img {
     margin: 0 auto 0 auto;} }
 @media screen and (max-width: 480px) {
   header {
-    height: 600px; }
+    height: 410px; }
+
+header #entry img {
+	display: none;
+}
 
 footer #container p {
 	left: 0;

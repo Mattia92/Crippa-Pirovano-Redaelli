@@ -48,7 +48,7 @@ body {
   width: 100%;
   position: relative;
   margin: 0px;
-  height: 100%;
+  height: auto;
   background-color: #F7FAF9;
   overflow-x: hidden; }
 
@@ -72,13 +72,41 @@ button {
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease; }
+  transition: all 500ms ease;
+ }
 
 button:hover {
   color: white;
   background-color: #22a966;
   border-color: #22a966;
-  cursor: pointer; }
+  cursor: pointer; 
+
+}
+
+
+#buttons {
+  padding: 12px 14px;
+  border: 2px solid #373c40;
+  border-radius: 5px;
+  color: #373c40;
+  font-size: 13px;
+  font-weight: 700;
+width:13%;
+height:3%;
+display:inline-block;
+  background-color: white;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease; }
+
+#buttons:hover {
+  color: white;
+  background-color: #22a966;
+  border-color: #22a966;
+  cursor: pointer; 
+
+}
 
 .sfondo {
   background-color: #f4f4f4;
@@ -395,7 +423,7 @@ section h1 {
   display: block;
   width: 100%;
   padding: 0px 0px 5px 0px;
-  color: #373c40;
+  color: #22a966;
   font-size: 25px;
   line-height: 100px;
   font-weight: 600;
@@ -460,7 +488,9 @@ section .subtitle {
   line-height: 24px;
   font-weight: 300;
   text-align: center;
-  width: auto; }
+  /* width: auto; */ 
+  /* height: 13%; */
+}
 
 /*<--ABOUT US SECTION-->*/
 #aboutus {
@@ -473,9 +503,11 @@ section .subtitle {
 
 /*<--THE TEAM SECTION-->*/
 #theteam {
-  height: 500px;
+  height: 100%;
   background-color: #f4f4f4;
-  display: none;}
+  /* display: none; */
+  background-image: url("../images/stars.png");
+}
 
 body.addedClass #theteam {
  display: block;
@@ -568,15 +600,14 @@ nav div#socialBar a.pint:hover {
 
 
 #whatwedo {
-  height: 939px;
-  display:none;
+  height: 100%;
+  display:none; 
   }
 
 
 #whatwedo ul {
-  height: 462px;
-  margin-top: 35px;
-  margin-bottom: 150px; }
+  height: 530px;
+  margin-top: 35px;}
 
 
 .divider {
@@ -1428,9 +1459,6 @@ footer #container img {
 
 /*<---PRIMA QUERY : STEP 2 991PX--->*/
 @media screen and (max-width: 991px) {
-body {
-	height: 100%;
-}
 
 body.addedClass.alfa {
   height: 2224px;
@@ -1526,8 +1554,7 @@ body.addedClass.level {
     /* fix del bug non allineamento delle immagini*/ }
 
   #theteam ul li {
-    height: 100%;
-    float: left; }
+    height: 100%;}
 
   #theteam ul li img {
     width: 167px; }
@@ -1672,7 +1699,7 @@ body.addedClass.level #theteam {
   /*<--WHATWEDO--->*/
   #whatwedo {
     height: auto;
-    display:none;
+    /* display:none; */
     padding-bottom: 70px; }
 
   #whatwedo ul {
